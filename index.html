@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Professional Shaxsiy Portfolio - Frontend Dasturchi, Telegram Bot Dasturchisi va Kiberxavfsizlik Mutaxassisi">
+
+    <meta name="referrer" content="no-referrer">
+    <meta name="robots" content="noarchive">
+    <meta name="googlebot" content="noarchive">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-WebKit-CSP" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; connect-src 'self';">
+    <title> Frontend va Kiberxavfsizlik</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="additional-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body oncontextmenu="return false;" onselectstart="return false;" ondragstart="return false;" oncopy="return false;" oncut="return false;" onpaste="return false;" onkeydown="return disableCtrlKeyCombos(event);">
+    <!-- Background Switcher -->
+    <div class="background-switcher">
+        <button class="bg-switcher-btn" id="bgSwitcherBtn" aria-label="Change Background">
+            <i class="fas fa-images"></i>
+        </button>
+    </div>
+    
+    <!-- Background Overlay -->
+    <div class="bg-overlay" id="bgOverlay"></div>
+    
+    <!-- Site Loader -->
+    <div class="site-loader" id="siteLoader">
+        <div class="loader-content">
+            <div class="loader-container">
+                <div class="loader-letter">S</div>
+            </div>
+        </div>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Portfolio<span class="dot">.</span></a>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link" data-text="Bosh sahifa">Bosh sahifa</a></li>
+                <li><a href="#about" class="nav-link" data-text="Men haqimda">Men haqimda</a></li>
+                <li><a href="#skills" class="nav-link" data-text="Ko'nikmalar">Ko'nikmalar</a></li>
+                <li><a href="#services" class="nav-link" data-text="Xizmatlar">Xizmatlar</a></li>
+                <li><a href="#experience" class="nav-link" data-text="Tajriba">Tajriba</a></li>
+                <li><a href="#projects" class="nav-link" data-text="Loyihalar">Loyihalar</a></li>
+                <li><a href="#certificates" class="nav-link" data-text="Sertifikatlar">Sertifikatlar</a></li>
+                <li><a href="#testimonials" class="nav-link" data-text="Fikrlar">Fikrlar</a></li>
+                <li><a href="#blog" class="nav-link" data-text="Blog">Blog</a></li>
+                <li><a href="#contact" class="nav-link" data-text="Aloqa">Aloqa</a></li>
+            </ul>
+            <div class="nav-controls">
+                <div class="clock" id="clock">
+                    <div class="clock-time" id="clockTime">00:00:00</div>
+                    <div class="clock-date" id="clockDate">Loading...</div>
+                </div>
+                <button class="theme-toggle" id="themeToggle" aria-label="Theme Toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="particleCanvas" class="particle-canvas"></canvas>
+        <div class="hero-particles"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="greeting">Salom, men</span>
+                    <span class="name">Sanjarbek  Otabekov</span>
+                </h1>
+                <div class="typing-container">
+                    <h2 class="hero-subtitle">
+                        Men <span class="typing-text"></span>
+                    </h2>
+                </div>
+                <p class="hero-description">
+                    Zamonaviy veb-saytlar, Telegram botlar yaratish va kiberxavfsizlik sohasida 
+                    o'z bilimlarimni oshirishga intiluvchi boshlang'ich darajadagi dasturchiman. 
+                    Har bir loyiha men uchun yangi o'rganish va rivojlanish imkoniyatidir.
+                </p>
+                <div class="hero-stats-inline">
+                    <div class="inline-stat">
+                        <i class="fas fa-code"></i>
+                        <div>
+                            <strong>15+</strong>
+                            <span>Loyihalar</span>
+                        </div>
+                    </div>
+                    <div class="inline-stat">
+                        <i class="fas fa-users"></i>
+                        <div>
+                            <strong>5+</strong>
+                            <span>Mijozlar</span>
+                        </div>
+                    </div>
+                    <div class="inline-stat">
+                        <i class="fas fa-award"></i>
+                        <div>
+                            <strong>5+</strong>
+                            <span>Sertifikatlar</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ishlarimni ko'rish</a>
+                    <a href="#contact" class="btn btn-secondary">Bog'lanish</a>
+                    <a href="sam.pdf" class="btn btn-outline" id="downloadCV"><i class="fas fa-download"></i> CV yuklash</a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/OtabekovsProject" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sanjarbek-otabekov-6b27a8394/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://t.me/otabekovsanjarbek" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                    <a href="https://x.com/sanjarbek444" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card card-1">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-telegram"></i>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div class="hero-circle">
+                    <img src="image.png" alt="Sanjarbek Otabekov">
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Men haqimda</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Mening hayot yo'lim va professional rivojlanishim haqida</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image-container">
+                    <div class="about-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-user-circle"></i>
+                        </div>
+                        <div class="image-bg"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Frontend Dasturchi va Texnologiya Ishqibozi</h3>
+                    <p>
+                        Men zamonaviy veb-ilovalar yaratishga va texnologiya dunyosini o'rganishga 
+                        ishtiyoqli boshlang'ich darajadagi dasturchiman. Mening sayohatim frontend 
+                        dasturlash bilan boshlandi va hozirda men Telegram bot dasturlash hamda 
+                        kiberxavfsizlik sohalarida ham ko'nikmalarimni kengaytirmoqdaman.
+                    </p>
+                    <p>
+                        Men doimiy o'rganishga va eng so'nggi texnologiyalar bilan yangilanib turishga 
+                        ishonaman. Har bir loyiha men uchun o'sish va ko'nikmalarimni oshirish imkoniyati, 
+                        shu bilan birga foydali yechimlar yaratish imkonini beradi.
+                    </p>
+                    <p>
+                        <strong>Mening asosiy yo'nalishlarim:</strong> Men HTML5, CSS3, JavaScript va zamonaviy 
+                        frontend framework'lar bilan ishlayman. Telegram Bot API orqali interaktiv botlar 
+                        yarataman va veb-xavfsizlik tamoyillarini o'rganyapman. Har doim yangi texnologiyalarni 
+                        sinab ko'rishga va bilimlarimni kengaytirishga tayyorman.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-laptop-code"></i>
+                            <h4>Web Dasturlash</h4>
+                            <p>Zamonaviy va responsive veb-saytlar yaratish</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fab fa-telegram-plane"></i>
+                            <h4>Bot Yaratish</h4>
+                            <p>Telegram platformasi uchun funksional botlar</p>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <h4>Xavfsizlik</h4>
+                            <p>Veb va tarmoq xavfsizligi asoslari</p>
+                        </div>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-project-diagram"></i>
+                            <h4>15+</h4>
+                            <p>Bajarilgan loyihalar</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-code-branch"></i>
+                            <h4>3</h4>
+                            <p>Asosiy yo'nalishlar</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-heart"></i>
+                            <h4>100%</h4>
+                            <p>interaktivlik</p>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-clock"></i>
+                            <h4>24/7</h4>
+                            <p>O'rganishga tayyor</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mening Ko'nikmalarim</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Men o'rganayotgan va ishlayotgan texnologiyalar va vositalar</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Frontend Development -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Frontend Dasturlash</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS3</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="65"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>React</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Telegram Bot Development -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <h3>Telegram Botlar</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Bot API</span>
+                                <span>60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="60"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Python</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Database</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity -->
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Kiberxavfsizlik</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Xavfsizlik Asoslari</span>
+                                <span>55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="55"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tarmoq Xavfsizligi</span>
+                                <span>45%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="45"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Veb Xavfsizligi</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Etik Xakerlik</span>
+                                <span>40%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="40"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Xizmatlarim</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Men taklif qilayotgan professional xizmatlar</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Veb-sayt Yaratish</h3>
+                    <p>Zamonaviy, responsive va foydalanuvchilarga qulay veb-saytlar yaratish. HTML5, CSS3, JavaScript va zamonaviy framework'lar yordamida professional saytlar.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Responsive dizayn</li>
+                        <li><i class="fas fa-check"></i> SEO optimizatsiya</li>
+                        <li><i class="fas fa-check"></i> Tez yuklanish</li>
+                        <li><i class="fas fa-check"></i> Cross-browser qo'llab-quvvatlash</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fab fa-telegram-plane"></i>
+                    </div>
+                    <h3>Telegram Bot Dasturlash</h3>
+                    <p>Sizning biznesingiz yoki shaxsiy ehtiyojlaringiz uchun maxsus Telegram botlar yaratish. Avtomatlashtirish va foydalanuvchilar bilan interaktiv muloqot.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom komandalar</li>
+                        <li><i class="fas fa-check"></i> Ma'lumotlar bazasi integratsiyasi</li>
+                        <li><i class="fas fa-check"></i> Inline klaviaturalar</li>
+                        <li><i class="fas fa-check"></i> API integratsiyasi</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>UI/UX Dizayn</h3>
+                    <p>Foydalanuvchi tajribasini yaxshilaydigan zamonaviy va intuitiv interfeys dizayni. Chiroyli va funksional dizaynlar yaratish.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Zamonaviy dizayn</li>
+                        <li><i class="fas fa-check"></i> Foydalanuvchi tajribasi</li>
+                        <li><i class="fas fa-check"></i> Prototiplash</li>
+                        <li><i class="fas fa-check"></i> Brand identifikatsiya</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Veb Xavfsizlik Konsultatsiyasi</h3>
+                    <p>Veb-saytlar va ilovalar xavfsizligini tekshirish va takomillashtirish bo'yicha maslahatlar. Asosiy xavfsizlik zaifliklarini aniqlash.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Xavfsizlik audit</li>
+                        <li><i class="fas fa-check"></i> Zaifliklar tekshiruvi</li>
+                        <li><i class="fas fa-check"></i> SSL sertifikatlash</li>
+                        <li><i class="fas fa-check"></i> Xavfsizlik tavsiyalari</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cogs"></i>
+                    </div>
+                    <h3>Veb-sayt Ta'mirlash</h3>
+                    <p>Mavjud veb-saytlarni modernizatsiya qilish, xatolarni tuzatish va funksionallikni yaxshilash xizmatlari.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Bug fixing</li>
+                        <li><i class="fas fa-check"></i> Yangilanishlar</li>
+                        <li><i class="fas fa-check"></i> Optimizatsiya</li>
+                        <li><i class="fas fa-check"></i> Yangi funksiyalar</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>O'qitish va Mentorlik</h3>
+                    <p>Boshlang'ich darajadagi dasturchilar uchun veb-dasturlash va Telegram bot yaratish bo'yicha shaxsiy darslar va mentorlik.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 1-1 mentorlik</li>
+                        <li><i class="fas fa-check"></i> Amaliy loyihalar</li>
+                        <li><i class="fas fa-check"></i> Code review</li>
+                        <li><i class="fas fa-check"></i> Karyera maslahati</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Tajriba va Ta'lim</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Mening professional yo'lim va o'rganish jarayonim</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2024 - Hozir</div>
+                        <h3>Freelance Dasturchi</h3>
+                        <h4>Mustaqil</h4>
+                        <p>Turli mijozlar uchun veb-saytlar va Telegram botlar yaratish. HTML, CSS, JavaScript va Python tillarida loyihalar ustida ishlash.</p>
+                        <div class="timeline-tags">
+                            <span>Frontend</span>
+                            <span>Telegram Bots</span>
+                            <span>Web Design</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023 - 2024</div>
+                        <h3>Junior Frontend Dasturchi</h3>
+                        <h4>Lokal Startap</h4>
+                        <p>Jamoada ishlash tajribasi, responsive veb-interfeys yaratish va kod optimizatsiya qilish ko'nikmalari.</p>
+                        <div class="timeline-tags">
+                            <span>React</span>
+                            <span>CSS3</span>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3>Web Dasturlash Kursi</h3>
+                        <h4>Online Ta'lim Platformasi</h4>
+                        <p>Full-stack veb-dasturlash asoslarini o'rganish, amaliy loyihalar ustida ishlash va zamonaviy texnologiyalar bilan tanishish.</p>
+                        <div class="timeline-tags">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>API</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022 - 2023</div>
+                        <h3>Kiberxavfsizlik Kursi</h3>
+                        <h4>IT Academy</h4>
+                        <p>Veb-xavfsizlik asoslari, tarmoq xavfsizligi va etik xakerlik tamoyillarini o'rganish.</p>
+                        <div class="timeline-tags">
+                            <span>Security</span>
+                            <span>Network</span>
+                            <span>Ethical Hacking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mening Loyihalarim</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">So'nggi ishlarim va loyihalarim bilan tanishing</p>
+            </div>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">Hammasi</button>
+                <button class="filter-btn" data-filter="web">Veb-saytlar</button>
+                <button class="filter-btn" data-filter="bot">Telegram Botlar</button>
+                <button class="filter-btn" data-filter="security">Xavfsizlik</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Responsive Veb-sayt</h3>
+                        <p>To'liq responsive, zamonaviy animatsiyalar va interaktiv elementlar bilan jihozlangan professional veb-sayt.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-heart"></i> 45 ta</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="bot">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Telegram API</span>
+                            <span class="tag">SQLite</span>
+                        </div>
+                        <h3>Telegram Bot</h3>
+                        <p>Maxsus komandalar va avtomatlashtirilgan javoblar bilan interaktiv Telegram bot. Ma'lumotlar bazasi integratsiyasi.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-users"></i> 150+ foydalanuvchi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3>E-Commerce Sahifa</h3>
+                        <p>Mahsulotlar ko'rgazmasi va silliq foydalanuvchi tajribasi bilan zamonaviy landing page. Savdo funksiyalari bilan.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-star"></i> 4.8/5</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Xavfsizlik</span>
+                            <span class="tag">Cryptography</span>
+                        </div>
+                        <h3>Parol Generatori</h3>
+                        <p>Sozlanishi mumkin parametrlar va kuchliligini tekshiruvchi bilan xavfsiz parol generatori dasturi.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-download"></i> 200+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Chart.js</span>
+                            <span class="tag">API</span>
+                        </div>
+                        <h3>Dashboard UI</h3>
+                        <p>Ma'lumotlarni vizualizatsiya qilish va real-vaqt yangilanishlari bilan interaktiv boshqaruv paneli.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-eye"></i> 500+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="security">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Tarmoq</span>
+                            <span class="tag">Scapy</span>
+                        </div>
+                        <h3>Tarmoq Skaneri</h3>
+                        <p>Tarmoq xavfsizligi tushunchalarini o'rganish uchun asosiy tarmoq skaneri vositasi.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-code"></i> Open Source</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="bot">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Telegram</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <h3>Avtomatik Xabar Bot</h3>
+                        <p>Avtomatik xabarlar yuborish va guruhlarni boshqarish funksiyalari bilan Telegram bot.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-users"></i> 300+ foydalanuvchi</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-blog"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Shaxsiy Blog</h3>
+                        <p>Maqolalar va texnik yozuvlar uchun zamonaviy dizayn va SEO optimizatsiya qilingan blog platformasi.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2023</span>
+                            <span><i class="fas fa-comment"></i> 50+ izoh</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
+                            <a href="#" class="project-link"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Material-UI</span>
+                        </div>
+                        <h3>Restoran Veb-sayti</h3>
+                        <p>Online buyurtma va bron qilish imkoniyatlari bilan zamonaviy restoran uchun veb-sayt.</p>
+                        <div class="project-meta">
+                            <span><i class="fas fa-calendar"></i> 2024</span>
+                            <span><i class="fas fa-shopping-bag"></i> 100+ buyurtma</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Sertifikatlar va Yutuqlar</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Mening professional sertifikatlarim va erishgan yutuqlarim</p>
+            </div>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3>Frontend Web Development</h3>
+                    <p class="cert-issuer">Codecademy</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+                    <p class="cert-description">HTML5, CSS3, JavaScript va responsive dizayn bo'yicha to'liq kurs.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3>Python Programming</h3>
+                    <p class="cert-issuer">Coursera</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+                    <p class="cert-description">Python tilida dasturlash va Telegram bot yaratish asoslari.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity Fundamentals</h3>
+                    <p class="cert-issuer">Cisco Networking Academy</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2022</p>
+                    <p class="cert-description">Kiberxavfsizlik asoslari va tarmoq xavfsizligi tamoyillari.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React Development</h3>
+                    <p class="cert-issuer">Udemy</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+                    <p class="cert-description">React.js bilan zamonaviy veb-ilovalar yaratish.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Ethical Hacking Essentials</h3>
+                    <p class="cert-issuer">EC-Council</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+                    <p class="cert-description">Etik xakerlik va penetratsiya testlash asoslari.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Responsive Web Design</h3>
+                    <p class="cert-issuer">freeCodeCamp</p>
+                    <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+                    <p class="cert-description">Mobil-birinchi va responsive veb-dizayn tamoyillari.</p>
+                    <a href="#" class="cert-link">Sertifikatni ko'rish <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Blog va Maqolalar</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Texnologiya, dasturlash va kiberxavfsizlik haqida yozuvlarim</p>
+            </div>
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="blog-category">Frontend</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 15 Oktabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 5 daqiqa</span>
+                        </div>
+                        <h3>JavaScript ES6 Yangi Funksiyalari</h3>
+                        <p>JavaScript ES6 da kelgan eng foydali va zamonaviy funksiyalar haqida batafsil ma'lumot. Arrow funksiyalar, destructuring va ko'proq...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fab fa-telegram-plane"></i>
+                        </div>
+                        <div class="blog-category">Telegram Bot</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 10 Oktabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 8 daqiqa</span>
+                        </div>
+                        <h3>Telegram Bot Yaratish: Boshlang'ich Qo'llanma</h3>
+                        <p>Noldan Telegram bot yaratishni o'rganish. BotFather dan foydalanish, asosiy komandalar va Python bilan bot yaratish...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="blog-category">Xavfsizlik</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 5 Oktabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 10 daqiqa</span>
+                        </div>
+                        <h3>Veb-sayt Xavfsizligi: Asosiy 10 Tamoyil</h3>
+                        <p>Veb-saytingizni xavfsiz qilish uchun bilishingiz kerak bo'lgan eng muhim xavfsizlik tamoyillari va amaliyotlar...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="blog-category">Design</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 1 Oktabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 6 daqiqa</span>
+                        </div>
+                        <h3>Responsive Dizayn: Mobile-First Yondashuv</h3>
+                        <p>Zamonaviy veb-saytlar uchun mobile-first yondashuvi va responsive dizayn tamoyillari haqida to'liq qo'llanma...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="blog-category">Frontend</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 25 Sentyabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 12 daqiqa</span>
+                        </div>
+                        <h3>React Hooks: useState va useEffect</h3>
+                        <p>React Hooks bilan ishlash asoslari. useState va useEffect hook'larini amaliy misollar bilan o'rganish...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <div class="blog-placeholder">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="blog-category">Backend</div>
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span><i class="fas fa-calendar"></i> 20 Sentyabr 2024</span>
+                            <span><i class="fas fa-clock"></i> 7 daqiqa</span>
+                        </div>
+                        <h3>Ma'lumotlar Bazasi Tanlash: SQL vs NoSQL</h3>
+                        <p>Loyihangiz uchun to'g'ri ma'lumotlar bazasini tanlash. SQL va NoSQL ma'lumotlar bazalarining farqlari...</p>
+                        <a href="#" class="blog-link">Batafsil o'qish <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="blog-cta">
+                <a href="#" class="btn btn-primary">Barcha maqolalar <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Bog'lanish</h2>
+                <div class="title-underline"></div>
+                <p class="section-description">Loyiha haqida gaplashishni xohlaysizmi? Keling, birga ishlaymiz!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Email</h3>
+                        <p>sanjarbek@example.com</p>
+                        <a href="mailto:your.email@example.com" class="info-link">Xat yuborish</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h3>Telefon</h3>
+                        <p>+998 90 XXXXXXXX</p>
+                        <a href="tel:+998901234567" class="info-link">Qo'ng'iroq qilish</a>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h3>Manzil</h3>
+                        <p>O'zbekiston</p>
+                    </div>
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fab fa-telegram"></i>
+                        </div>
+                        <h3>Telegram</h3>
+                        <p>@otabekovsanjarbek</p>
+                        <a href="https://t.me/otabekovsanjarbek" class="info-link">Telegramda yozish</a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Ismingiz" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-input" placeholder="Email manzilingiz" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" placeholder="Mavzu" required>
+                        <i class="fas fa-tag"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-input" rows="5" placeholder="Xabaringiz" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Xabar yuborish <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-about">
+                    <h3>Portfolio<span class="dot">.</span></h3>
+                    <p>Men zamonaviy veb-saytlar, Telegram botlar yaratish va kiberxavfsizlik sohasida faoliyat yurituvchi dasturchi. Har bir loyiha men uchun yangi imkoniyat.</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/OtabekovsProject" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/sanjarbek-otabekov-6b27a8394/" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://t.me/otabekovsanjarbek" class="social-icon" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+                        <a href="https://x.com/sanjarbek444" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/otabekov444/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Tezkor Havolalar</h4>
+                    <ul>
+                        <li><a href="#home">Bosh sahifa</a></li>
+                        <li><a href="#about">Men haqimda</a></li>
+                        <li><a href="#services">Xizmatlar</a></li>
+                        <li><a href="#projects">Loyihalar</a></li>
+                        <li><a href="#contact">Aloqa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Xizmatlar</h4>
+                    <ul>
+                        <li><a href="#">Veb-sayt Yaratish</a></li>
+                        <li><a href="#">Telegram Bot</a></li>
+                        <li><a href="#">UI/UX Dizayn</a></li>
+                        <li><a href="#">Xavfsizlik</a></li>
+                        <li><a href="#">Mentorlik</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Yangiliklardan Xabardor Bo'ling</h4>
+                    <p>Email manzilingizni qoldiring va yangi loyihalar haqida birinchi bo'lib bilib oling.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Email manzilingiz" required>
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sanjarbek. Barcha huquqlar himoyalangan.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Maxfiylik Siyosati</a>
+                    <a href="#">Foydalanish Shartlari</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Yuqoriga">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>
